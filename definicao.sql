@@ -1,6 +1,8 @@
 use comercial;
 
-/*Criação das Tabelas*/
+## Criação das Tabelas
+
+## Tabela Clientes
 create table comclien(
 	n_numeclien int not null auto_increment,
     c_codiclien varchar(10),
@@ -13,6 +15,7 @@ create table comclien(
     primary key(n_numeclien)
 );
 
+##Tabela Fornecedores 
 create table comforne(
 	n_numeforne int not null auto_increment,
     c_codiforne varchar(10),
@@ -23,6 +26,7 @@ create table comforne(
     primary key(n_numeforne)
 );
 
+##Tabela Vendedores
 create table comvende(
 	n_numevende int not null auto_increment,
 	c_codivende varchar(10),
@@ -34,6 +38,7 @@ create table comvende(
     primary key(n_numevende)
 );
 
+##Tabela Produtos
 create table comprodu(
 	n_numeprodu int not null auto_increment,
     c_codiprodu varchar(20),
@@ -45,6 +50,7 @@ create table comprodu(
     primary key(n_numeprodu)
 );
 
+##Tabela Vendas
 create table comvenda(
 	n_numevenda int not null auto_increment,
     c_codivenda varchar(10),
@@ -74,6 +80,7 @@ create table comvendas(
     primary key(n_numevenda)
 );
 
+##Tabela Itens Vendas
 create table comivenda(
 	n_numeivenda int not null auto_increment,
     
@@ -117,7 +124,25 @@ alter table comivenda add constraint fk_comivenda_comvenda
 		references comvenda(n_numevenda)
 			on delete no action
             on update no action;
+         
+ /*Adicionando, removendo e alterando colunas*/        
+ alter table comclien add column c_cidaclien varchar(100);
+ 
+ alter table comclien add  column c_estclien varchar(100); 
+ alter table comclien drop column c_estclien; 
+ 
+ alter table comclien add column c_estaclien varchar(50);
+ alter table comclien modify column c_estaclien varchar(100);
+ 
+ ##remove tabela falsa.
+ drop table comvendas;
+ 
+ 
+ 
             
+
+
+
 /*drop tabelas*/
 /*drop tables comclien, comforne, comvende, comprodu, comvenda, comvendas, comivenda;*/
 
