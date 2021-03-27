@@ -112,5 +112,5 @@ insert into comivenda
     
     
 
-describe comforne;
+
  
