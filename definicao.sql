@@ -143,20 +143,6 @@ alter table comivenda add constraint fk_comivenda_comvenda
 
 
 
-/*drop tabelas*/
-/*drop tables comclien, comforne, comvende, comprodu, comvenda, comvendas, comivenda;*/
-
-/*show tables;*/
-
-/* descrição tabelas */
-/*desc comclien;
-desc comforne;
-desc comvende;
-desc comprodu;
-desc comvenda;
-desc comvendas;
-desc comivenda;
-*/
 
 
 
