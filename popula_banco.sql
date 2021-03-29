@@ -61,6 +61,12 @@ insert into comivenda
 insert into comivenda
 	values(4, 9000, 1, 0, 3, 2);
 
+##Atualiza registros da tabela comclien
+update comclien set c_razaclien = 'Inuyasha' where n_numeclien = 1;
+update comclien set c_razaclien = 'Kikyo' where n_numeclien = 2;
+update comclien set c_razaclien = 'Kagome' where n_numeclien = 3;
+update comclien set c_razaclien = 'Shippo' where n_numeclien = 4;
+update comclien set c_razaclien = 'Miroku' where n_numeclien = 5;
 
 
 
