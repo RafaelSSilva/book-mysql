@@ -137,7 +137,10 @@ alter table comivenda add constraint fk_comivenda_comvenda
  ##remove tabela falsa.
  drop table comvendas;
  
+ ##Adiciona coluna n_vcomvenda na tabela comvenda
+ ALTER TABLE comvenda ADD n_vcomvenda FLOAT(10,2);
  
+
  
             
 
