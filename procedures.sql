@@ -101,6 +101,7 @@ DELIMITER ;
 ##Comandos
 SHOW procedure status; 
 DROP PROCEDURE processa_comissionamento;
+DROP PROCEDURE IF EXISTS processa_comissionamento;
 
 ##Executar a procedure
 CALL processa_comissionamento('2015-01-01', '2021-12-31', @a);
