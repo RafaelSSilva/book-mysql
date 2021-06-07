@@ -254,9 +254,11 @@ END
 $$
 DELIMITER ;  
   
-  
-  
-  
+ 
+#Comandos
+ALTER TRIGGER tri_vendas_bi DESABLE;
+ALTER TRIGGER tri_vendas_bi ENABLE;  
+DROP TRIGGER tri_vendas_bi;
   
 
 
