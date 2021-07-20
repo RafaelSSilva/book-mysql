@@ -38,3 +38,7 @@ SELECT DATE_FORMAT(CURDATE(), GET_FORMAT(date, 'EUR'));
 
 #Converter texto para data
 SELECT STR_TO_DATE('August 10 2021','%M %d %Y');
+
+#Subtrai um intervalo de hora / data de uma data e retorna a data.alter
+#Subtrai 30 minutos da data atual.
+SELECT date_sub(NOW(), interval 30 MINUTE);
