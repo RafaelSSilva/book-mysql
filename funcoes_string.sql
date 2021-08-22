@@ -1,3 +1,14 @@
+#SUBSTR() => Extrai uma substring de uma string (Começando em qualquer posição).
+#SUBSTR(string, start, length) ou SUBSTR(string from start for length)
+#Parâmetros:
+# string: Obrigatório. String para extração
+#  start:  Obrigatório. Pode ser número positivo ou negativo. Se for positico, a função extrai do início da string. Se for negativo,
+# a função extrai do final da string.
+#  length: Opcional.Número de caracteres a serem extraidos. Se omitido, tada a string será retornada(da posição inicial).
+
+SELECT SUBSTR('The number of characters to extract. If omitted', 5, 6) AS substring;
+SELECT SUBSTR('The number of characters to extract. If omitted', -7,7) AS SUBSTRING; 
+
 #substr() e length()
 SELECT c_codiprodu, c_descprodu FROM comprodu
 WHERE SUBSTR(c_codiprodu,1,3) = '123' AND LENGTH(c_codiprodu) <= 6;
@@ -20,6 +31,14 @@ SELECT LCASE(c_razaclien) FROM comclien;
 #ucase - Letras maiúsculas
 SELECT UCASE(c_razaclien) FROM comclien;
 
+#LOCATE() => Retorna a posição da primeira ocorrência de uma substring em uma string. Retorna zero caso a substring não seja encontrada.
+#não diferencia maiúsculas de minúsculas.
+#LOCATE(substring, string)
+#Parâmetros:
+#substring: Obrigatório. A substring a ser pesquisada.
+#string: Obrigatório. A string que será pesquisada.
+#start: Opcional. Posição inicial para a pesquisa. Posição 1 é o padrão.
 
+SELECT LOCATE("com", "W3Schools.com") AS posicao
 
 
